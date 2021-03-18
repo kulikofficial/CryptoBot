@@ -28,3 +28,7 @@ async def get_bitcoin(message: types.Message):
 @dp.message_handler(text='NFT')
 async def get_bitcoin(message: types.Message):
     await message.answer(nftprotocol())
+
+@dp.message_handler(text='Cardano')
+async def get_bitcoin(message: types.Message):
+    await message.answer(cardano())
