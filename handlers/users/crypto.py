@@ -17,7 +17,7 @@ def ethereum():
     eth_key = eth.get('ethereum')
     eth_reformat_usd = eth_key.get('usd')
     eth_reformat_rub = eth_key.get('rub')
-    return f'<i>Ethereum</i>\nUSD: 💲 <b>{eth_reformat_usd}</b>\nRUB: ₽ <b>{eth_reformat_rub}</b>'
+    return f'<i>Bitcoin</i>\nUSD: 💲 <b>{eth_reformat_usd}</b>\nRUB: ₽ <b>{eth_reformat_rub}</b>'
 
 
 def nftprotocol():
@@ -26,7 +26,8 @@ def nftprotocol():
     nft_key = nft.get('nft-protocol')
     nft_reformat_usd = nft_key.get('usd')
     nft_reformat_rub = nft_key.get('rub')
-    return f'<i>NFT</i>\nUSD: 💲 <b>{nft_reformat_usd}</b>\nRUB: ₽ <b>{nft_reformat_rub}</b>'
+    return f'<i>Bitcoin</i>\nUSD: 💲 <b>{nft_reformat_usd}</b>\nRUB: ₽ <b>{nft_reformat_rub}</b>'
+
 
 def cardano():
     cg = CoinGeckoAPI()
