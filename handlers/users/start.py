@@ -2,7 +2,7 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
 from pycoingecko import CoinGeckoAPI
-from handlers.users.crypto import bitcoin, ethereum, nftprotocol
+from handlers.users.crypto import bitcoin, ethereum, nftprotocol, cardano
 from keyboards.default import cryptomenu
 
 from loader import dp
