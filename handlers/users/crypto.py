@@ -27,3 +27,11 @@ def nftprotocol():
     nft_reformat_usd = nft_key.get('usd')
     nft_reformat_rub = nft_key.get('rub')
     return f'<i>NFT</i>\nUSD: 💲 <b>{nft_reformat_usd}</b>\nRUB: ₽ <b>{nft_reformat_rub}</b>'
+
+def cardano():
+    cg = CoinGeckoAPI()
+    nft = cg.get_price(ids='cardano', vs_currencies=['usd', 'rub'])
+    ada_key = nft.get('cardano')
+    ada_reformat_usd = ada_key.get('usd')
+    ada_reformat_rub = ada_key.get('rub')
+    return f'<i>Cardano</i>\nUSD: 💲 <b>{ada_reformat_usd}</b>\nRUB: ₽ <b>{ada_reformat_rub}</b>'
